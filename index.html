@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Портфоліо, проєкти та нотатки веброзробника Андрія."
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Андрій — веброзробник</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand-wrap">
+          <span class="brand-mark">A</span>
+          <span class="brand-text">Андрій</span>
+        </div>
+
+        <nav class="nav" aria-label="Основна навігація">
+          <a href="#about">Про мене</a>
+          <a href="#projects">Проєкти</a>
+          <a href="#notes">Нотатки</a>
+          <a href="#contact">Контакти</a>
+        </nav>
+      </header>
+
+      <main class="page">
+        <section class="hero section-card" id="about">
+          <div class="hero-copy">
+            <p class="eyebrow">Frontend Developer / UI Engineer</p>
+            <h1>Створюю чисті, швидкі та зрозумілі цифрові продукти.</h1>
+            <p class="lead">
+              Я Андрій — веброзробник, який любить конструювати інтерфейси,
+              користувальницький досвід і рішення, що працюють не тільки красиво,
+              а й на практиці.
+            </p>
+
+            <div class="cta-row">
+              <a class="button primary" href="#projects">Переглянути проєкти</a>
+              <a class="button secondary" href="#contact">Написати</a>
+            </div>
+
+            <ul class="meta-list" aria-label="Основні навички">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>UX/UI</li>
+            </ul>
+          </div>
+
+          <div class="hero-visual" aria-label="Ілюстрація профілю">
+            <div class="portrait-card">
+              <div class="portrait-glow"></div>
+              <div class="portrait-content">
+                <span class="chip">Available for work</span>
+                <div class="avatar-ring">
+                  <div class="avatar">A</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-block" id="projects">
+          <div class="section-heading">
+            <p class="eyebrow">Проєкти</p>
+            <h2>Що я буду робити для вас</h2>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card">
+              <span class="project-tag">Landing</span>
+              <h3>Сайти під ключ</h3>
+              <p>
+                Розробка сучасних лендінгів і презентаційних сторінок під продукт,
+                сервіс або особистий бренд.
+              </p>
+            </article>
+
+            <article class="project-card">
+              <span class="project-tag">UI</span>
+              <h3>Інтерфейси</h3>
+              <p>
+                Створення зручних, візуально чітких інтерфейсів для вебсервісів,
+                адмінок та мобільних екранів.
+              </p>
+            </article>
+
+            <article class="project-card">
+              <span class="project-tag">Optimization</span>
+              <h3>Оптимізація</h3>
+              <p>
+                Поліпшення швидкості, доступності та продуктового UX без втрати
+                стилю та структури.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section-block notes-block" id="notes">
+          <div class="section-heading">
+            <p class="eyebrow">Нотатки</p>
+            <h2>Мої думки та підходи</h2>
+          </div>
+
+          <div class="notes-list">
+            <article class="note-item">
+              <time datetime="2025-01-15">15 січня 2025</time>
+              <h3>Про простоту в UI</h3>
+              <p>
+                Простота — це не мінімалізм заради мінімалізму. Це логіка,
+                ясність і легкість використання.
+              </p>
+            </article>
+
+            <article class="note-item">
+              <time datetime="2025-02-02">2 лютого 2025</time>
+              <h3>Чому швидкість важлива</h3>
+              <p>
+                Якщо користувач відчуває затримку, він не просто чекає — він
+                втрачає довіру до продукту.
+              </p>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer" id="contact">
+        <div>
+          <p class="eyebrow">Контакти</p>
+          <h2>Давайте створимо щось разом</h2>
+        </div>
+
+        <div class="footer-contact">
+          <a href="mailto:andrii@example.com">andrii@example.com</a>
+          <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

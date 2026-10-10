@@ -19,135 +19,124 @@
     <script src="script.js" defer></script>
   </head>
   <body>
-    <div class="page-shell">
-      <header class="topbar">
-        <div class="brand-wrap">
-          <span class="brand-mark">A</span>
-          <span class="brand-text">Андрій</span>
+    <main class="page-shell" id="home">
+      <section class="aircraft-section" id="aircraft-section" aria-label="Інтерактивна ілюстрація винищувача Су-30МКІ">
+        <button
+          class="fighter-card"
+          id="fighter-card"
+          type="button"
+          aria-label="Показати будову винищувача Су-30МКІ"
+          aria-expanded="false"
+          aria-controls="aircraft-legend"
+        >
+          <span class="aircraft-stage" id="aircraft-stage" aria-hidden="true">
+            <span class="aircraft-ghost"></span>
+            <span class="aircraft-tag-layer" id="aircraft-tag-layer"></span>
+          </span>
+          <span class="fighter-hint">Наведіть, щоб ознайомитися <span>↗</span></span>
+        </button>
+        <div class="aircraft-legend-wrap" id="aircraft-legend" aria-hidden="true">
+          <div class="aircraft-legend-clip">
+            <ol class="aircraft-legend" id="aircraft-details"></ol>
+          </div>
         </div>
+        <p class="aircraft-caption">Су-30МКІ · технічна ілюстрація</p>
+      </section>
 
-        <nav class="nav" aria-label="Основна навігація">
-          <a href="#about">Про мене</a>
+      <header class="page-header">
+        <a class="site-name" href="#home">Андрій</a>
+        <nav class="header-links" aria-label="Посилання">
           <a href="#projects">Проєкти</a>
-          <a href="#notes">Нотатки</a>
-          <a href="#contact">Контакти</a>
+          <a href="#writing">Нотатки</a>
+          <a href="https://t.me/batandrij" target="_blank" rel="noreferrer">Telegram</a>
         </nav>
       </header>
 
-      <main class="page">
-        <section class="hero section-card" id="about">
-          <div class="hero-copy">
-            <p class="eyebrow">Frontend Developer / UI Engineer</p>
-            <h1>Створюю чисті, швидкі та зрозумілі цифрові продукти.</h1>
-            <p class="lead">
-              Я Андрій — веброзробник, який любить конструювати інтерфейси,
-              користувальницький досвід і рішення, що працюють не тільки красиво,
-              а й на практиці.
-            </p>
-
-            <div class="cta-row">
-              <a class="button primary" href="#projects">Переглянути проєкти</a>
-              <a class="button secondary" href="#contact">Написати</a>
-            </div>
-
-            <ul class="meta-list" aria-label="Основні навички">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>React</li>
-              <li>UX/UI</li>
-            </ul>
-          </div>
-
-          <div class="hero-visual" aria-label="Ілюстрація профілю">
-            <div class="portrait-card">
-              <div class="portrait-glow"></div>
-              <div class="portrait-content">
-                <span class="chip">Available for work</span>
-                <div class="avatar-ring">
-                  <div class="avatar">A</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="section-block" id="projects">
-          <div class="section-heading">
-            <p class="eyebrow">Проєкти</p>
-            <h2>Що я буду робити для вас</h2>
-          </div>
-
-          <div class="project-grid">
-            <article class="project-card">
-              <span class="project-tag">Landing</span>
-              <h3>Сайти під ключ</h3>
-              <p>
-                Розробка сучасних лендінгів і презентаційних сторінок під продукт,
-                сервіс або особистий бренд.
-              </p>
-            </article>
-
-            <article class="project-card">
-              <span class="project-tag">UI</span>
-              <h3>Інтерфейси</h3>
-              <p>
-                Створення зручних, візуально чітких інтерфейсів для вебсервісів,
-                адмінок та мобільних екранів.
-              </p>
-            </article>
-
-            <article class="project-card">
-              <span class="project-tag">Optimization</span>
-              <h3>Оптимізація</h3>
-              <p>
-                Поліпшення швидкості, доступності та продуктового UX без втрати
-                стилю та структури.
-              </p>
-            </article>
-          </div>
-        </section>
-
-        <section class="section-block notes-block" id="notes">
-          <div class="section-heading">
-            <p class="eyebrow">Нотатки</p>
-            <h2>Мої думки та підходи</h2>
-          </div>
-
-          <div class="notes-list">
-            <article class="note-item">
-              <time datetime="2025-01-15">15 січня 2025</time>
-              <h3>Про простоту в UI</h3>
-              <p>
-                Простота — це не мінімалізм заради мінімалізму. Це логіка,
-                ясність і легкість використання.
-              </p>
-            </article>
-
-            <article class="note-item">
-              <time datetime="2025-02-02">2 лютого 2025</time>
-              <h3>Чому швидкість важлива</h3>
-              <p>
-                Якщо користувач відчуває затримку, він не просто чекає — він
-                втрачає довіру до продукту.
-              </p>
-            </article>
-          </div>
-        </section>
-      </main>
-
-      <footer class="footer" id="contact">
-        <div>
-          <p class="eyebrow">Контакти</p>
-          <h2>Давайте створимо щось разом</h2>
+      <section class="profile" aria-labelledby="profile-title">
+        <div class="profile-copy">
+          <h1 id="profile-title">Андрій</h1>
+          <p class="profile-lead">
+            <em>Розробляю інтерфейси.</em> Створюю зрозумілі сайти та вебпродукти,
+            приділяючи увагу швидкості, типографіці й деталям.
+          </p>
+          <p>
+            Розповідаю про те, чим займаюся та які завдання мене цікавлять.
+            Створюю сайти для реальних завдань, добираючи рішення відповідно до
+            потреб кожного замовника.
+          </p>
+          <p>
+            Раніше — <a class="inline-link" href="#projects">мій досвід і попередні проєкти</a>.
+            Відкритий до нових ідей і співпраці.
+          </p>
         </div>
+      </section>
 
-        <div class="footer-contact">
-          <a href="mailto:andrii@example.com">andrii@example.com</a>
-          <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
-          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
-        </div>
+      <section class="link-columns" aria-label="Роботи та публікації">
+        <section class="link-column" aria-labelledby="building-title">
+          <h2 id="building-title">Створюю</h2>
+          <article class="link-item">
+            <a href="https://t.me/batandrij" target="_blank" rel="noreferrer">Я відкритий до роботи <span aria-hidden="true">↗</span></a>
+            <p>Готовий долучитися до нових проєктів і співпраці.</p>
+          </article>
+        </section>
+
+        <section class="link-column" id="projects" aria-labelledby="projects-title">
+          <h2 id="projects-title">Проєкти</h2>
+          <article class="link-item">
+            <a href="https://auto-servis-boyko.github.io/" target="_blank" rel="noreferrer">AUTOPNEU BOYKO <span aria-hidden="true">↗</span></a>
+            <p>Сайт створено повністю за запитом власника: реалізовано саме те, що він попросив.</p>
+          </article>
+          <article class="link-item">
+            <a href="https://webportvolio.github.io/Vitrylo/" target="_blank" rel="noreferrer">Вітрило <span aria-hidden="true">↗</span></a>
+            <p>Кишеньковий анемометр для моряків і кайтсерферів — допомагає вимірювати вітер.</p>
+          </article>
+          <article class="link-item">
+            <a href="https://webportvolio.github.io/Lapka/" target="_blank" rel="noreferrer">Лапка <span aria-hidden="true">↗</span></a>
+            <p>3D-гра з автоматом-хапайкою: керуйте лапою, ловіть іграшки та набирайте очки.</p>
+          </article>
+        </section>
+
+        <section class="link-column" id="writing" aria-labelledby="writing-title">
+          <h2 id="writing-title">Пишу</h2>
+          <article class="link-item">
+            <strong>Сайт під ваш запит</strong>
+            <p>Спершу з’ясовую, що саме потрібно власнику, а потім втілюю це в готовому сайті.</p>
+          </article>
+          <article class="link-item">
+            <strong>Увага до деталей</strong>
+            <p>Зручність, зрозуміла структура та охайний вигляд важливі на кожному екрані.</p>
+          </article>
+          <article class="link-item">
+            <strong>Від задуму до запуску</strong>
+            <p>Працюю над проєктом так, щоб результат відповідав домовленостям із замовником.</p>
+          </article>
+        </section>
+      </section>
+
+      <section class="now-section" aria-labelledby="now-title">
+        <h2 id="now-title">Зараз</h2>
+        <p>
+          Розвиваюся через практику, із цікавістю вивчаю нові інструменти й
+          прагну робити кожен наступний проєкт трохи кращим за попередній.
+        </p>
+        <p>
+          У вільний час люблю музику, книжки та інші речі, якими хочеться
+          поділитися.
+        </p>
+      </section>
+
+      <section class="connect-section" id="contact" aria-labelledby="connect-title">
+        <h2 id="connect-title">Зв’язатися</h2>
+        <p>
+          Напишіть мені в Telegram:
+          <a class="inline-link" href="https://t.me/batandrij" target="_blank" rel="noreferrer">@batandrij</a>.
+        </p>
+      </section>
+
+      <footer class="site-footer">
+        <span>Андрій · <span id="current-year"></span></span>
+        <a href="#home">На початок ↑</a>
       </footer>
-    </div>
+    </main>
   </body>
 </html>
